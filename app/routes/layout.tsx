@@ -1,4 +1,4 @@
-import { Medal } from "lucide-react";
+import { LucideGithub, Medal } from "lucide-react";
 import { Link, NavLink, Outlet } from "react-router";
 
 export default function Layout() {
@@ -43,6 +43,16 @@ export default function Layout() {
         >
           ShadCN
         </Link>
+        <br />
+        <div className="p-4 w-fit m-auto text-center">
+          <Link
+            target="_blank"
+            className="m-auto cursor-pointer"
+            to="https://github.com/abhi12123/Nobel-Laurets"
+          >
+            <LucideGithub />
+          </Link>
+        </div>
       </footer>
     </div>
   );
